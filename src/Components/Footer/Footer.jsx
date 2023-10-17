@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="grid grid-cols-1 md:grid-cols-8 lg:grid-cols-8 ml-[90px] md:ml-[40px] lg:ml-[150px] pt-[100px] ">
         {/* 1st part */}
         <div className="col-span-2 w-[300px] md:w-[200px] lg:w-[300px] text-gray-600">
-          <h1 className="text-3xl font-bold mb-3 md:mb-7 text-[#c97d4a]">
+          <h1 className="text-3xl font-bold mb-3 md:mb-7 text-black">
             INFORMATION
           </h1>
           <h1 className="md:mb-0 mb-12">About us</h1>
@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
         {/* 2nd part */}
         <div className="col-span-2 w-[300px] md:w-[200px] lg:w-[300px] text-gray-600">
-          <h1 className="text-3xl font-bold mb-3 md:mb-7 text-[#c97d4a]">
+          <h1 className="text-3xl font-bold mb-3 md:mb-7 text-black">
             MY ACCOUNT
           </h1>
           <p>My Account</p>
@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
         {/* 3rd part */}
         <div className="col-span-2 w-[300px] md:w-[200px] lg:w-[300px]">
-          <h1 className="text-3xl font-bold mb-3 md:mb-7 text-[#c97d4a]">
+          <h1 className="text-3xl font-bold mb-3 md:mb-7 text-black">
             PRODUCT TAG
           </h1>
           <div className="flex gap-2 text-gray-600">
@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
         {/* 4th part */}
         <div className="col-span-2 w-[300px] md:w-[200px] lg:w-[300px]">
-          <h1 className="text-3xl font-bold mb-3 md:mb-7 text-[#c97d4a]">
+          <h1 className="text-3xl font-bold mb-3 md:mb-7 text-black">
             STAY WITH US
           </h1>
           <p className="text-gray-600">
