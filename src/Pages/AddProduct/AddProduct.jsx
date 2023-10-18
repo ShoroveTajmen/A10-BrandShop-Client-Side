@@ -35,8 +35,6 @@ const AddProduct = () => {
     }
 
 
-
-
   return (
     <div className="bg-[#DCDCDC] p-24 w-[1100px] mx-auto mt-12 mb-12">
       <h2 className="text-3xl font-extrabold text-[#c97d4a]">Add a Product</h2>
@@ -123,7 +121,7 @@ const AddProduct = () => {
             </label>
             <label className="">
               <input
-                type="text"
+                type="number"
                 name="rating"
                 placeholder="Rating"
                 className="input input-bordered w-full"
