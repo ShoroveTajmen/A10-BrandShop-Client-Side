@@ -25,7 +25,6 @@ const Brand = () => {
 
     return (
         <div>
-            <h2>Specific brand here :{loadedProducts.length}</h2>
             <AllProducts products={products}></AllProducts>
         </div>
     );
