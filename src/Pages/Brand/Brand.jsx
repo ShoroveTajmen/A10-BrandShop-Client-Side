@@ -8,19 +8,19 @@ const Brand = () => {
     
     //collect specific brandName
     const {brandName} = useParams();
-    console.log(brandName);
+    // console.log(brandName);
 
     //load all productData from database
     // eslint-disable-next-line react-hooks/exhaustive-deps
     const loadedProducts = useLoaderData() || []
-    console.log(loadedProducts);
+    // console.log(loadedProducts);
 
     //filter data by brand name
     useEffect(()=>{
         const getProduct = loadedProducts?.filter(pro => pro.brand === brandName)
         setProducts(getProduct)
     },[brandName, loadedProducts])
-    console.log(products);
+    // console.log(products);
   
 
     return (

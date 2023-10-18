@@ -3,7 +3,7 @@
 import Product from "./Product";
 
 const AllProducts = ({ products }) => {
-  console.log(products);
+//   console.log(products);
   return (
     <div>
       <div>

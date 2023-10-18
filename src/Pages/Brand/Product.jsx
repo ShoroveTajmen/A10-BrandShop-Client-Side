@@ -36,9 +36,12 @@ const Product = ({ product }) => {
                 Product Details
               </button>
             </Link>
-            <button className="btn btn-outline btn-sm rounded-3xl  font-bold capitalize">
-              Update Product
-            </button>
+            <Link to={`/updateProduct/${_id}`}>
+              {" "}
+              <button className="btn btn-outline btn-sm rounded-3xl  font-bold capitalize">
+                Update Product
+              </button>
+            </Link>
           </div>
         </div>
       </div>
