@@ -3,6 +3,7 @@ import SocialLogin from "../Login/SocialLogin";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import toast from "react-hot-toast";
+import Swal from "sweetalert2";
 
 const Register = () => {
 
@@ -45,13 +46,15 @@ const Register = () => {
       .then((res) => {
         console.log(res);
         handleUpdateProfile(name, photo).then(() => {
-          toast.success("Registration SucessFully");
+          // toast.success("Registration SucessFully");
+          Swal.fire("Registration Successful", "success")
           navigate("/");
         });
       })
       .catch((error) => {
         console.log(error);
-        toast.error(error.message);
+        // toast.error(error.message);
+        Swal.fire(error.message)
       });
   };
 

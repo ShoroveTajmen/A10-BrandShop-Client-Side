@@ -1,8 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
 import SocialLogin from "./SocialLogin";
-import toast from "react-hot-toast";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
+import Swal from "sweetalert2";
 
 const Login = () => {
 
@@ -40,11 +40,11 @@ const Login = () => {
     signIn(email, password)
       .then((res) => {
         console.log(res.user);
-        setSuccess(toast.success("Login Successful"));
+        setSuccess(Swal.fire("Login Successful", "success"));
         navigate("/");
       })
       .catch((error) => {
-        console.log(error.message)
+        Swal.fire(error.message)
       });
   };
 

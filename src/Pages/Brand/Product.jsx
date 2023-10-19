@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 /* eslint-disable react/prop-types */
 const Product = ({ product }) => {
+
   const {
     _id,
     brand,
@@ -14,7 +15,7 @@ const Product = ({ product }) => {
   } = product || {};
   return (
     <div>
-      <div className="w-[300px] h-[450px] border border-[#c97d4a]">
+      <div className="w-[300px] h-[500px] border border-[#c97d4a]">
         <figure>
           <img
             className="w-[200px] h-[200px] ml-[50px] mt-[20px]"
@@ -24,6 +25,7 @@ const Product = ({ product }) => {
         </figure>
         <div className="p-5 text-center space-y-5">
           <div className="space-y-3 font-bold">
+            <h2>{brand}</h2>
             <h2 className="">Product Name: {productName}</h2>
             <h2>Product Type: {type}</h2>
             <h2>Price: {price}</h2>

@@ -20,7 +20,7 @@ const Brand = () => {
         const getProduct = loadedProducts?.filter(pro => pro.brand === brandName)
         setProducts(getProduct)
     },[brandName, loadedProducts])
-    // console.log(products);
+    console.log(products);
   
 
     return (
