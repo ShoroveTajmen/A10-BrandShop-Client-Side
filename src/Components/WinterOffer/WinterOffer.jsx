@@ -1,6 +1,6 @@
 const WinterOffer = () => {
   return (
-    <div className="bg-[#DCDCDC] mb-5 h-[500px]">
+    <div className="bg-[#DCDCDC] mb-[100px] h-[500px]">
       <div className="flex w-[1200px] mx-auto  justify-between items-center ">
         <div className=" mt-[30px]">
           <h1 className="text-2xl font-semibold mb-3">Winter Collection</h1>

@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Banner from "../../Components/Banner/Banner";
 import AllData from "../../Components/AllData/AllData";
 import WinterOffer from "../../Components/WinterOffer/WinterOffer";
+import CommentSection from "../../Components/CommentSection/CommentSection";
 
 const Home = () => {
   const data = useLoaderData();
@@ -16,6 +17,7 @@ const Home = () => {
 
       <AllData data={data}></AllData>
       <WinterOffer></WinterOffer>
+      <CommentSection></CommentSection>
     </div>
   );
 };
