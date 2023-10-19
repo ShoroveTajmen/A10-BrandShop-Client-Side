@@ -11,6 +11,42 @@ const ProductDetails = ({ productCard }) => {
     rating,
     type,
   } = productCard || {};
+
+
+  const handleAddToCart = e => {
+     e.preventDefault();
+
+     //send cart product data object to the server
+     const cartProductData = {
+      _id,
+      brand,
+      description,
+      price,
+      productName,
+      productPic,
+      rating,
+      type,
+     }
+     console.log(cartProductData)
+
+     //send data to the server
+     fetch('http://localhost:5000/addCart', {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(cartProductData)
+     })
+     .then(res => res.json())
+     .then(data => {
+      console.log(data)
+      if(data.insertedId){
+        console.log('cart product data added')
+      }
+     })
+  }
+
+
   return (
     <div>
       <div className="h-[900px] md:h-[1100px] lg:h-[900px] flex flex-col md:flex-col lg:flex-row justify-center items-center md:w-[700px] lg:w-[1400px] w-[370px] mx-auto gap-12 mb-[1px]">
@@ -26,7 +62,7 @@ const ProductDetails = ({ productCard }) => {
           <h1 className="text-5xl font-bold mb-4">{rating}</h1>
           <h1 className="text-5xl font-bold mb-4">Price: {price}TK</h1>
           <h1 className="text-xl font-bold mb-4">{description}</h1>
-          <button className="btn btn-outline">Add to Cart</button>
+          <button onClick={handleAddToCart} className="btn btn-outline">Add to Cart</button>
         </div>
       </div>
     </div>

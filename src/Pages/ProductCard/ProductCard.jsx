@@ -7,9 +7,12 @@ const ProductCard = () => {
     
     const [productCard, setProductCard] = useState({});
 
+
+    //product data load from database
     const products = useLoaderData();
     console.log(products)
 
+    //get specific product id
     const {_id} = useParams();
     console.log(_id)
 
