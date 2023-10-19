@@ -91,7 +91,7 @@ const Footer = () => {
         </div>
       </div>
       <h1 className="mt-[100px] text-center font-semibold">
-        &copy; 2023 SilkSerenadeStyle Fashion. All Rights Reserved.
+        &copy; 2023 Fashion&Apparel. All Rights Reserved.
       </h1>
     </div>
   );

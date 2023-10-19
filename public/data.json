@@ -1,25 +1,46 @@
 [
     {
+        "id": "1",
         "brandName": "Nike",
-        "brandImage": "https://i.ibb.co/TYwN9yq/nike.jpg"
+        "brandImage": "https://i.ibb.co/TYwN9yq/nike.jpg",
+        "slide1": "https://i.ibb.co/gj9G1jW/sli1.png",
+        "slide2": "https://i.ibb.co/SPcr4kk/sli2.jpg",
+        "slide3": "https://i.ibb.co/QF8P1Bv/sli3.webp"
     },
     {
+        "id": "2",
         "brandName": "Adidas",
-        "brandImage": "https://i.ibb.co/92V77BL/adidas.jpg"
+        "brandImage": "https://i.ibb.co/92V77BL/adidas.jpg",
+        "slide1": "https://i.ibb.co/qsT0mGy/adi1.jpg",
+        "slide2": "https://i.ibb.co/55h0KXn/adi2.jpg",
+        "slide3": "https://i.ibb.co/s5QffSR/adi3.jpg"
     },
     {
+        "id": "3",
         "brandName": "Gucci",
-        "brandImage": "https://i.ibb.co/nM8TZ9F/gucci.webp"
+        "brandImage": "https://i.ibb.co/nM8TZ9F/gucci.webp",
+        "slide1": "https://i.ibb.co/c1vJQj5/guu1.jpg",
+        "slide2": "https://i.ibb.co/1KP3V1G/guu2.webp",
+        "slide3": "https://i.ibb.co/Jmwnf2y/guu3.jpg"
     },
     {
+        "id": "4",
         "brandName": "Aarong",
-        "brandImage": "https://i.ibb.co/wdRDCnn/aarong.jpg"
+        "brandImage": "https://i.ibb.co/wdRDCnn/aarong.jpg",
+        "slide1": "https://i.ibb.co/B2pqMTS/aar1.webp",
+        "slide2": "https://i.ibb.co/BzYdBN1/aar2.jpg",
+        "slide3": "https://i.ibb.co/yX68LRt/aar3.png"
     },
     {
+        "id": "5",
         "brandName": "Zara",
-        "brandImage": "https://i.ibb.co/hyBmzRD/zara.jpg"
+        "brandImage": "https://i.ibb.co/hyBmzRD/zara.jpg",
+        "slide1": "https://i.ibb.co/0skfc9H/zaa1.jpg",
+        "slide2": "https://i.ibb.co/tM6QWVX/zar2.webp",
+        "slide3": "https://i.ibb.co/17xMdkp/zar3.webp"
     },
     {
+        "id": "6",
         "brandName": "Levis",
         "brandImage": "https://i.ibb.co/Bn5pGRh/levis.jpg"
     }
