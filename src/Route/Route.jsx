@@ -33,7 +33,7 @@ const myCreateRoute = createBrowserRouter([
       {
         path: "/brand/:brandName",
         element: <Brand></Brand>,
-        loader: () => fetch("http://localhost:5000/product"),
+        loader: () => fetch("https://brand-shop-server-side-kohl.vercel.app/product"),
       },
       {
         path: "/product/:_id",
@@ -42,7 +42,7 @@ const myCreateRoute = createBrowserRouter([
             <ProductCard></ProductCard>
           </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:5000/product"),
+        loader: () => fetch("https://brand-shop-server-side-kohl.vercel.app/product"),
       },
       {
         path: "/updateProduct/:id",
@@ -52,7 +52,7 @@ const myCreateRoute = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/product/${params.id}`),
+          fetch(`https://brand-shop-server-side-kohl.vercel.app/product/${params.id}`),
       },
       {
         path: "/myCart",
@@ -61,7 +61,7 @@ const myCreateRoute = createBrowserRouter([
             <MyCart></MyCart>
           </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:5000/addCart"),
+        loader: () => fetch("https://brand-shop-server-side-kohl.vercel.app/addCart"),
       },
       {
         path: "/login",

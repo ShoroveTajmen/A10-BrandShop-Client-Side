@@ -51,10 +51,10 @@ const Login = () => {
   return (
     <div>
       <div>
-        <h2 className="text-5xl my-10 text-center font-bold text-[#c97d4a] mt-[50px]">
+        <h2 className="text-5xl my-10 text-center font-bold mt-[50px]">
           Please Login
         </h2>
-        <div className="md:w-[500px] mx-auto h-[400px] bg-[#DCDCDC] shadow-2xl rounded-lg mb-9 p-8">
+        <div className="md:w-[500px] mx-auto h-[400px] border border-black mb-9 p-8">
           <form onSubmit={handleSubmit}>
             <div className="form-control">
               <label className="label">
@@ -64,7 +64,7 @@ const Login = () => {
                 type="email"
                 name="email"
                 placeholder="Email"
-                className="input input-bordered"
+                className="border border-black p-3"
                 required
               />
             </div>
@@ -76,7 +76,7 @@ const Login = () => {
                 type="password"
                 name="password"
                 placeholder="Password"
-                className="input input-bordered"
+                className="border border-black p-3"
                 required
               />
             </div>
@@ -84,7 +84,7 @@ const Login = () => {
             <div className="form-control mt-6">
               <button
                 type="submit"
-                className="btn bg-[#c97d4a] text-white font-bold"
+                className="bg-black p-3 uppercase text-xl text-white  font-bold"
               >
                 Login
               </button>

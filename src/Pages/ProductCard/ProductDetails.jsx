@@ -33,7 +33,7 @@ const ProductDetails = ({ productCard }) => {
      console.log(cartProductData)
 
      //send data to the server
-     fetch('http://localhost:5000/addCart', {
+     fetch('https://brand-shop-server-side-kohl.vercel.app/addCart', {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -62,11 +62,11 @@ const ProductDetails = ({ productCard }) => {
           />
         </div>
         <div className="w-[400px] md:w-[500px] md:text-left text-center">
-          <h1 className="text-xl font-bold mt-5 mb-3">Product Name: {productName}</h1>
-          <h1 className="text-5xl font-bold mb-4">{rating}</h1>
-          <h1 className="text-5xl font-bold mb-4">Price: {price}TK</h1>
+          <h1 className="text-xl font-bold mt-5 mb-3">PRODUCT NAME: {productName}</h1>
+          <h1 className="text-5xl font-bold mb-4">RATING: {rating}</h1>
+          <h1 className="text-5xl font-bold mb-4">PRICE: {price}TK</h1>
           <h1 className="text-xl font-bold mb-4">{description}</h1>
-          <button onClick={handleAddToCart} className="btn btn-outline">Add to Cart</button>
+          <button onClick={handleAddToCart} className="bg-black text-white p-3 font-bold">ADD TO CART</button>
         </div>
       </div>
     </div>

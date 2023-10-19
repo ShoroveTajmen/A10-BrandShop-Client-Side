@@ -110,7 +110,7 @@ const Navbar = () => {
 
           <div className="mb-3 md:mb-0 ml-[170px] md:ml-0">
             <Link to="/register">
-              <button className="btn btn-sm  btn-primary font-bold">
+              <button className=" btn-sm bg-[#c97d4a] text-white uppercase font-bold">
                 Register
               </button>
             </Link>
@@ -138,7 +138,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <button
-                      className="btn btn-sm btn-primary font-bold"
+                      className="btn btn-sm bg-[#c97d4a] text-white font-bold"
                       onClick={logOut}
                     >
                       Logout
@@ -148,7 +148,7 @@ const Navbar = () => {
               </div>
             ) : (
               <Link to="/login">
-                <button className="btn btn-sm btn-primary font-bold ml-[170px] md:ml-0">
+                <button className=" btn-sm bg-[#c97d4a] text-white uppercase font-bold ml-[170px] md:ml-0">
                   Login
                 </button>
               </Link>

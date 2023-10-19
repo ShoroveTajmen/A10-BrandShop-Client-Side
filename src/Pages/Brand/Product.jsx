@@ -15,7 +15,7 @@ const Product = ({ product }) => {
   } = product || {};
   return (
     <div>
-      <div className="w-[300px] h-[500px] border border-[#c97d4a]">
+      <div className="w-[350px] h-[500px] border border-black mb-[100px]">
         <figure>
           <img
             className="w-[200px] h-[200px] ml-[50px] mt-[20px]"
@@ -23,24 +23,24 @@ const Product = ({ product }) => {
             alt="Shoes"
           />
         </figure>
-        <div className="p-5 text-center space-y-5">
+        <div className="p-5 ml-[30px] space-y-5">
           <div className="space-y-3 font-bold">
-            <h2>{brand}</h2>
-            <h2 className="">Product Name: {productName}</h2>
-            <h2>Product Type: {type}</h2>
-            <h2>Price: {price}</h2>
-            <h2>Rating: {rating}</h2>
+            <h2>BRAND: {brand}</h2>
+            <h2 className="">PRODUCT NAME: {productName}</h2>
+            <h2>PRODUCT TYPE: {type}</h2>
+            <h2>{price} TK</h2>
+            <h2>RATING OUT OF/5: {rating}</h2>
           </div>
           <div className="flex gap-2">
             <Link to={`/product/${_id}`}>
               {" "}
-              <button className="btn btn-outline btn-sm rounded-3xl  font-bold capitalize">
+              <button className="bg-black text-white text-[12px] font-semibold p-2 uppercase">
                 Product Details
               </button>
             </Link>
             <Link to={`/updateProduct/${_id}`}>
               {" "}
-              <button className="btn btn-outline btn-sm rounded-3xl  font-bold capitalize">
+              <button className="bg-black text-white text-[12px] font-semibold p-2 uppercase">
                 Update Product
               </button>
             </Link>

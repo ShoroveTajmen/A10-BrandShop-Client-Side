@@ -1,8 +1,10 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import AllProducts from "./AllProducts";
 
 const Brand = () => {
+
     //for storing the filtered productData
     const [products, setProducts] = useState([]);
     
@@ -17,12 +19,12 @@ const Brand = () => {
 
     //filter data by brand name
     useEffect(()=>{
-        const getProduct = loadedProducts?.filter(pro => pro.brand === brandName)
+        const getProduct = loadedProducts.filter(pro => pro.brand === brandName)
         setProducts(getProduct)
     },[brandName, loadedProducts])
-    console.log(products);
-  
+    // console.log(products);
 
+  
     return (
         <div>
             <AllProducts products={products}></AllProducts>

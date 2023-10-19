@@ -29,7 +29,7 @@ const CartProducts = ({ product, cartProducts, setCartProducts }) => {
       })
       .then(result => {
         if(result.isConfirmed){
-            fetch(`http://localhost:5000/addCart/${_id}`, {
+            fetch(`https://brand-shop-server-side-kohl.vercel.app/addCart/${_id}`, {
                 method: "DELETE",
             })
             .then(res => res.json())
@@ -48,7 +48,7 @@ const CartProducts = ({ product, cartProducts, setCartProducts }) => {
   return (
     <div>
       <div>
-        <div className="w-[300px] h-[450px] border border-[#c97d4a]">
+        <div className="w-[350px] h-[550px] border border-black">
           <figure>
             <img
               className="w-[200px] h-[200px] ml-[50px] mt-[20px]"
@@ -56,15 +56,15 @@ const CartProducts = ({ product, cartProducts, setCartProducts }) => {
               alt="Shoes"
             />
           </figure>
-          <div className="p-5 text-center space-y-5">
+          <div className="mt-8 ml-[50px] space-y-5">
             <div className="space-y-3 font-bold">
               <h2 className="">Product Name: {productName}</h2>
               <h2>Product Type: {type}</h2>
-              <h2>Price: {price}</h2>
+              <h2>Price: {price} TK</h2>
               <h2>Rating: {rating}</h2>
             </div>
             <div>
-              <button onClick={() => handleDelete(_id)} className="btn btn-outline btn-sm rounded-3xl  font-bold capitalize ml-[60px]">
+              <button onClick={() => handleDelete(_id)} className="bg-black text-white p-3  font-bold uppercase mt-[50px]">
                 Delete Product
               </button>
             </div>

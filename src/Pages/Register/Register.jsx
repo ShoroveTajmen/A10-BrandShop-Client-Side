@@ -60,10 +60,10 @@ const Register = () => {
   return (
     <div>
       <div>
-        <h2 className="text-5xl my-10 text-center font-bold text-[#c97d4a] ml-4 md:ml-0 mt-14 ">
+        <h2 className="text-5xl my-10 text-center font-bold ml-4 md:ml-0 mt-14 ">
           Please Register
         </h2>
-        <div className="md:w-[500px] mx-auto h-[570px] bg-[#DCDCDC] shadow-2xl rounded-lg mb-9 p-8">
+        <div className="md:w-[500px] mx-auto h-[570px] border border-black mb-9 p-8">
           <form onSubmit={handleSubmit}>
             <div className="form-control">
               <label className="label">
@@ -73,7 +73,7 @@ const Register = () => {
                 type="text"
                 name="name"
                 placeholder="Name"
-                className="input input-bordered"
+                className="p-3 border border-black"
                 required
               />
             </div>
@@ -85,7 +85,7 @@ const Register = () => {
                 type="text"
                 name="photo"
                 placeholder="Photo URL"
-                className="input input-bordered"
+                className="p-3 border border-black"
                 required
               />
             </div>
@@ -97,7 +97,7 @@ const Register = () => {
                 type="email"
                 name="email"
                 placeholder="Email"
-                className="input input-bordered"
+                className="p-3 border border-black"
                 required
               />
             </div>
@@ -109,13 +109,13 @@ const Register = () => {
                 type="password"
                 name="password"
                 placeholder="Password"
-                className="input input-bordered"
+                className="p-3 border border-black"
                 required
               />
             </div>
             {regError && <p className="text-red-700">{regError}</p>}
             <div className="form-control mt-6">
-              <button className="btn bg-[#c97d4a] text-white  font-bold">
+              <button className="bg-black p-3 uppercase text-xl text-white  font-bold">
                 Register
               </button>
             </div>

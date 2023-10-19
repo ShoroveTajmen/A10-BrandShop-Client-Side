@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useLoaderData } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const UpdateProduct = () => {
   const product = useLoaderData();
@@ -40,7 +41,7 @@ const UpdateProduct = () => {
     console.log(updateProduct);
 
     //send newProduct data to the server
-    fetch(`http://localhost:5000/product/${_id}`, {
+    fetch(`https://brand-shop-server-side-kohl.vercel.app/product/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -51,14 +52,14 @@ const UpdateProduct = () => {
       .then((data) => {
         console.log(data);
         if (data. modifiedCount > 0) {
-          console.log("product updated");
+          Swal.fire("Product Updated Successfully", "success");
         }
       });
   };
 
   return (
     <div className="bg-[#DCDCDC] p-24 w-[1100px] mx-auto mt-12 mb-12">
-      <h2 className="text-3xl font-extrabold text-[#c97d4a]">
+      <h2 className="text-4xl font-bold uppercase">
         Update a Product
       </h2>
       <form onSubmit={handleUpdateProduct}>
@@ -68,7 +69,7 @@ const UpdateProduct = () => {
             <label className="label">
               <span className="label-text">Brand Name</span>
             </label>
-            <select name="brand" defaultValue={brand} className="select w-full ">
+            <select name="brand" defaultValue={brand} className="select w-full border-black ">
               <option disabled selected>
                 Select Your Favourite Brand
               </option>
@@ -90,7 +91,7 @@ const UpdateProduct = () => {
                 name="productName"
                 defaultValue={productName}
                 placeholder="Product Name"
-                className="input input-bordered w-full"
+                className="input input-bordered w-full border-black"
               />
             </label>
           </div>
@@ -107,7 +108,7 @@ const UpdateProduct = () => {
                 name="type"
                 defaultValue={type}
                 placeholder="Product Type"
-                className="input input-bordered w-full"
+                className="input input-bordered w-full border-black"
               />
             </label>
           </div>
@@ -121,7 +122,7 @@ const UpdateProduct = () => {
                 name="price"
                 defaultValue={price}
                 placeholder="Product Price"
-                className="input input-bordered w-full"
+                className="input input-bordered w-full border-black"
               />
             </label>
           </div>
@@ -138,7 +139,7 @@ const UpdateProduct = () => {
                 name="productPic"
                 defaultValue={productPic}
                 placeholder="Product Pic"
-                className="input input-bordered w-full"
+                className="input input-bordered w-full border-black"
               />
             </label>
           </div>
@@ -152,7 +153,7 @@ const UpdateProduct = () => {
                 name="rating"
                 defaultValue={rating}
                 placeholder="Rating"
-                className="input input-bordered w-full"
+                className="input input-bordered w-full border-black"
               />
             </label>
           </div>
@@ -169,7 +170,7 @@ const UpdateProduct = () => {
                 name="description"
                 defaultValue={description}
                 placeholder="Product Description"
-                className="input input-bordered w-full"
+                className="input input-bordered w-full border-black"
               />
             </label>
           </div>
@@ -177,7 +178,7 @@ const UpdateProduct = () => {
         <input
           type="submit"
           value="Update Product"
-          className="btn font-bold text-xl bg-[#c97d4a] text-white w-[400px] ml-[250px]"
+          className=" btn  bg-black font-bold  uppercase p-3 text-white w-[400px] ml-[250px]"
         />
       </form>
     </div>

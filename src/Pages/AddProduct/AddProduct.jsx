@@ -1,3 +1,5 @@
+import Swal from "sweetalert2";
+
 const AddProduct = () => {
   const handleAddProduct = (e) => {
     e.preventDefault();
@@ -24,7 +26,7 @@ const AddProduct = () => {
     console.log(newProduct);
 
     //send newProduct data to the server
-    fetch("http://localhost:5000/product", {
+    fetch("https://brand-shop-server-side-kohl.vercel.app/product", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -35,14 +37,15 @@ const AddProduct = () => {
       .then((data) => {
         console.log(data);
         if (data.insertedId) {
-          console.log("product added");
+          Swal.fire("Product Added Successful", "success");
+          form.reset();
         }
       });
   };
 
   return (
     <div className="bg-[#DCDCDC] p-24 w-[1100px] mx-auto mt-12 mb-12">
-      <h2 className="text-3xl font-extrabold text-[#c97d4a]">Add a Product</h2>
+      <h2 className="text-4xl font-bold uppercase">Add a Product</h2>
       <form onSubmit={handleAddProduct}>
         {/* brand name and product name */}
         <div className="flex mb-8">
@@ -50,7 +53,7 @@ const AddProduct = () => {
             <label className="label">
               <span className="label-text">Brand Name</span>
             </label>
-            <select name="brand" className="select w-full ">
+            <select name="brand" className="select w-full border-black">
               <option disabled selected>
                 Select Your Favourite Brand
               </option>
@@ -71,7 +74,7 @@ const AddProduct = () => {
                 type="text"
                 name="productName"
                 placeholder="Product Name"
-                className="input input-bordered w-full"
+                className="input input-bordered border-black w-full"
               />
             </label>
           </div>
@@ -87,7 +90,7 @@ const AddProduct = () => {
                 type="text"
                 name="type"
                 placeholder="Product Type"
-                className="input input-bordered w-full"
+                className="input input-bordered border-black w-full"
               />
             </label>
           </div>
@@ -100,7 +103,7 @@ const AddProduct = () => {
                 type="text"
                 name="price"
                 placeholder="Product Price"
-                className="input input-bordered w-full"
+                className="input input-bordered border-black w-full"
               />
             </label>
           </div>
@@ -116,7 +119,7 @@ const AddProduct = () => {
                 type="text"
                 name="productPic"
                 placeholder="Product Pic"
-                className="input input-bordered w-full"
+                className="input input-bordered border-black w-full"
               />
             </label>
           </div>
@@ -129,7 +132,7 @@ const AddProduct = () => {
                 type="number"
                 name="rating"
                 placeholder="Rating"
-                className="input input-bordered w-full"
+                className="input input-bordered border-black w-full"
               />
             </label>
           </div>
@@ -145,7 +148,7 @@ const AddProduct = () => {
                 type="text"
                 name="description"
                 placeholder="Product Description"
-                className="input input-bordered w-full"
+                className="input input-bordered border-black w-full"
               />
             </label>
           </div>
@@ -153,7 +156,7 @@ const AddProduct = () => {
         <input
           type="submit"
           value="Add Product"
-          className="btn font-bold text-xl bg-[#c97d4a] text-white w-[400px] ml-[250px]"
+          className=" btn  bg-black font-bold text-white uppercase w-[400px] ml-[250px]"
         />
       </form>
     </div>
