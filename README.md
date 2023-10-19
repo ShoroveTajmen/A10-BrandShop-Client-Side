@@ -4,11 +4,11 @@
 
 - In below I will list out the 5 Project features ::-
 
-  - OverView Of Homepage ->
+ - OverView Of Homepage ->
 This website is built on a brand and shop project for fashion and style.In home page, there is a navigation bar, a banner section, brands section, winter sale off section, a comment section where user can share their thoughts and a footer section. This website shown multiple brands and under the specific brand user can choose their desire product. Dynamic routing and  private routes that require sign-in are available in the navigation area. The user name, profile picture, and logout button are displayed in the right side of the navigation bar whenever we sign in to the website. In navigation bar there are two private routes available which is add product and my cart routes. And a dark/light theme toogle present in the nav bar where user can easily change their website color.
 
 
-  - Add Product route details ->
+ - Add Product route details ->
 In this part, there is form where user can add product. They can select specific brand name, product name, product type, product price, product rating and product short description. After click on the add product button product will be stored in the database. And this route is private route. If user can access this route he/she have to be sign in to the website.
 
  - Specific brand description ->
