@@ -1,39 +1,44 @@
 const AddProduct = () => {
+  const handleAddProduct = (e) => {
+    e.preventDefault();
 
-    const handleAddProduct = (e) => {
-        e.preventDefault();
+    const form = e.target;
 
-        const form = e.target;
+    const brand = form.brand.value;
+    const productName = form.productName.value;
+    const type = form.type.value;
+    const price = form.price.value;
+    const productPic = form.productPic.value;
+    const rating = form.rating.value;
+    const description = form.description.value;
 
-        const brand = form.brand.value;
-        const productName = form.productName.value;
-        const type = form.type.value;
-        const price = form.price.value;
-        const productPic = form.productPic.value;
-        const rating = form.brand.value;
-        const description = form.description.value;
- 
-        const newProduct = {brand, productName, type, price, productPic, rating, description}
-        console.log(newProduct);
+    const newProduct = {
+      brand,
+      productName,
+      type,
+      price,
+      productPic,
+      rating,
+      description,
+    };
+    console.log(newProduct);
 
-        //send newProduct data to the server 
-        fetch('http://localhost:5000/product', {
-            method: 'POST',
-            headers: {
-                "content-type": "application/json",
-              },
-            body: JSON.stringify(newProduct),  
-        })
-        .then(res => res.json())
-        .then(data => {
-            console.log(data)
-            if(data.insertedId){
-                console.log('product added');
-            }
-        })
-
-    }
-
+    //send newProduct data to the server
+    fetch("http://localhost:5000/product", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(newProduct),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.insertedId) {
+          console.log("product added");
+        }
+      });
+  };
 
   return (
     <div className="bg-[#DCDCDC] p-24 w-[1100px] mx-auto mt-12 mb-12">
@@ -45,17 +50,17 @@ const AddProduct = () => {
             <label className="label">
               <span className="label-text">Brand Name</span>
             </label>
-              <select name="brand" className="select w-full ">
-                <option disabled selected>
-                  Select Your Favourite Brand
-                </option>
-                <option>Nike</option>
-                <option>Adidas</option>
-                <option>Gucci</option>
-                <option>Aarong</option>
-                <option>Zara</option>
-                <option>Levis</option>
-              </select>
+            <select name="brand" className="select w-full ">
+              <option disabled selected>
+                Select Your Favourite Brand
+              </option>
+              <option>Nike</option>
+              <option>Adidas</option>
+              <option>Gucci</option>
+              <option>Aarong</option>
+              <option>Zara</option>
+              <option>Levis</option>
+            </select>
           </div>
           <div className="form-control w-1/2 ml-4">
             <label className="label">
