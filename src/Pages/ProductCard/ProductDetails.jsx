@@ -1,4 +1,8 @@
 /* eslint-disable no-unused-vars */
+
+import toast from "react-hot-toast";
+import Swal from "sweetalert2";
+
 /* eslint-disable react/prop-types */
 const ProductDetails = ({ productCard }) => {
   const {
@@ -18,7 +22,6 @@ const ProductDetails = ({ productCard }) => {
 
      //send cart product data object to the server
      const cartProductData = {
-      _id,
       brand,
       description,
       price,
@@ -42,6 +45,7 @@ const ProductDetails = ({ productCard }) => {
       console.log(data)
       if(data.insertedId){
         console.log('cart product data added')
+        Swal.fire("Product Added Successfully", "success");
       }
      })
   }

@@ -57,7 +57,7 @@ const AuthProvider = ({ children }) => {
       setLoading(false);
     });
   }, []);
-  console.log(user)
+  // console.log(user)
 
   const authentication = {
     googleLogin,
