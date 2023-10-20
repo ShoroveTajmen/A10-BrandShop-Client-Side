@@ -108,7 +108,7 @@ const Navbar = () => {
         <div className="flex  lg:w-[700px] font-bold text-lg flex-col md:flex-row md:justify-end  md:items-center ">
           {/* Register */}
 
-          <div className="mb-3 md:mb-0 ml-[180px] md:ml-0">
+          <div className="mb-3 md:mb-0 ml-[180px] md:ml-0 mr-[5px]">
             <Link to="/register">
               <button className=" btn-sm bg-[#c97d4a] text-white uppercase font-bold">
                 Register
@@ -148,7 +148,7 @@ const Navbar = () => {
               </div>
             ) : (
               <Link to="/login">
-                <button className=" btn-sm bg-[#c97d4a] text-white uppercase font-bold lg:ml-[0px] md:ml-0 ml-[180px]">
+                <button className=" btn-sm bg-[#c97d4a] text-white uppercase font-bold lg:ml-[5px] md:ml-0 ml-[190px]">
                   Login
                 </button>
               </Link>
