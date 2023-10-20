@@ -21,7 +21,7 @@ const CommentSection = () => {
           />{" "}
           <br />
           <textarea
-            className="lg:w-[670px] w-[400px] h-[250px] bg-[#e5e5e5]  mt-5 border border-black"
+            className="lg:w-[670px] w-[350px] h-[250px] bg-[#e5e5e5]  mt-5 border border-black"
             placeholder="  Message"
           ></textarea>
         </div>
