@@ -9,7 +9,6 @@ const MyCart = () => {
   console.log(userEmail);
 
   const loadedCartProducts = useLoaderData();
-  const [cartProducts, setCartProducts] = useState(loadedCartProducts);
   //   console.log(cartProducts);
 
   //filter data by brand name
