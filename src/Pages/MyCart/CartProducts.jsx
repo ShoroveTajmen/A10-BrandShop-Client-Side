@@ -2,7 +2,7 @@
 import Swal from "sweetalert2";
 
 /* eslint-disable no-unused-vars */
-const CartProducts = ({ product, cartProducts, setCartProducts }) => {
+const CartProducts = ({ product, findUserProduct, setFindUserProduct }) => {
   const {
     _id,
     brand,
@@ -37,8 +37,8 @@ const CartProducts = ({ product, cartProducts, setCartProducts }) => {
                 console.log(data);
                 if(data.deletedCount > 0){
                     Swal.fire("Deleted!", "Your product has been deleted.", "success");
-                    const remaining = cartProducts.filter(pro => pro._id !== _id)
-                    setCartProducts(remaining);
+                    const remaining = findUserProduct.filter(pro => pro._id !== _id)
+                    setFindUserProduct(remaining);
                 }
             })
         }

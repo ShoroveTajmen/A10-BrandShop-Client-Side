@@ -1,7 +1,9 @@
 /* eslint-disable no-unused-vars */
 
+import { useContext } from "react";
 import toast from "react-hot-toast";
 import Swal from "sweetalert2";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 /* eslint-disable react/prop-types */
 const ProductDetails = ({ productCard }) => {
@@ -16,6 +18,10 @@ const ProductDetails = ({ productCard }) => {
     type,
   } = productCard || {};
 
+  const {user} = useContext(AuthContext);
+  const userEmail = user.email;
+  console.log(userEmail)
+
 
   const handleAddToCart = e => {
      e.preventDefault();
@@ -29,6 +35,7 @@ const ProductDetails = ({ productCard }) => {
       productPic,
       rating,
       type,
+      userEmail,
      }
      console.log(cartProductData)
 
