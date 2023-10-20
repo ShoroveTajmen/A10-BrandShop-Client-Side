@@ -63,7 +63,7 @@ const Register = () => {
         <h2 className="text-5xl my-10 text-center font-bold ml-4 md:ml-0 mt-14 ">
           Please Register
         </h2>
-        <div className="md:w-[500px] mx-auto h-[570px] border border-black mb-9 p-8">
+        <div className="md:w-[500px] w-[400px] mx-auto h-[570px] border border-black mb-9 p-8">
           <form onSubmit={handleSubmit}>
             <div className="form-control">
               <label className="label">

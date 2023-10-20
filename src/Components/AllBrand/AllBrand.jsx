@@ -9,7 +9,7 @@ const AllBrand = ({ data }) => {
   return (
     <div>
       <Link to={`/brand/${brandName}`}>
-        <div className=" w-[300px] bg-base-100 shadow-xl border border-black">
+        <div className="ml-[90px] lg:ml-0 w-[300px] bg-base-100 shadow-xl border border-black">
           <figure>
             <img className="w-full h-[200px]" src={brandImage} alt="Product" />
           </figure>

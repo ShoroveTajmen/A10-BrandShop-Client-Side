@@ -48,7 +48,7 @@ const CartProducts = ({ product, cartProducts, setCartProducts }) => {
   return (
     <div>
       <div>
-        <div className="w-[350px] h-[550px] border border-black">
+        <div className="w-[350px] h-[550px] border border-black lg:ml-0 ml-[67px]">
           <figure>
             <img
               className="w-[200px] h-[200px] ml-[50px] mt-[20px]"

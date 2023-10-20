@@ -45,7 +45,7 @@ const ProductDetails = ({ productCard }) => {
       console.log(data)
       if(data.insertedId){
         console.log('cart product data added')
-        Swal.fire("Product Added Successfully", "success");
+        Swal.fire("Product Added To The Cart ", "success");
       }
      })
   }
@@ -53,10 +53,10 @@ const ProductDetails = ({ productCard }) => {
 
   return (
     <div>
-      <div className="h-[900px] md:h-[1100px] lg:h-[900px] flex flex-col md:flex-col lg:flex-row justify-center items-center md:w-[700px] lg:w-[1400px] w-[370px] mx-auto gap-12 mb-[1px]">
+      <div className="h-[900px] md:h-[1100px] lg:h-[900px] flex flex-col md:flex-col lg:flex-row justify-center items-center md:w-[700px] lg:w-[1400px] w-[370px] mx-auto gap-12 lg:mb-0 mb-[50px] lg:mt-0 mt-[70px]">
         <div className="w-[350px] h-[450px] border border-black">
           <img
-            className="w-[350px] h-[350px] md:w-[250px] md:h-[250px] mt-12 lg:mt-[100px] ml-[50px] "
+            className="lg:w-[250px] lg:h-[250px]  md:w-[250px] md:h-[250px] mt-[100px] lg:mt-[100px] ml-[70px] lg:ml-[50px] "
             src={productPic}
             alt=""
           />

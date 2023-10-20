@@ -31,8 +31,8 @@ const Navbar = () => {
       <nav className="flex flex-col md:flex-row md:justify-between md:items-center py-3 md:py-2  md:px-5 md:ml-0 shadow-xl rounded-lg  ">
         <Logo></Logo>
         {/* navbar link page */}
-        <div className="w-1/3 ml-[300px]">
-          <ul className="flex gap-5 font-bold text-lg flex-col md:flex-row md:justify-center md:items-center">
+        <div className="lg:w-1/3 lg:ml-[300px] ml-[100px]">
+          <ul className="flex gap-5 font-bold text-lg flex-row md:flex-row md:justify-center md:items-center">
             <li>
               <NavLink
                 to="/"
@@ -79,7 +79,7 @@ const Navbar = () => {
         </div>
 
         {/* dark/light theme portion */}
-        <div>
+        <div className="ml-[225px] lg:ml-0">
           <label className="swap swap-rotate">
             {/* this hidden checkbox controls the state */}
             <input type="checkbox" onChange={handleToggle} checked={theme === "light" ? false : true} />
@@ -108,7 +108,7 @@ const Navbar = () => {
         <div className="flex  lg:w-[700px] font-bold text-lg flex-col md:flex-row md:justify-end  md:items-center ">
           {/* Register */}
 
-          <div className="mb-3 md:mb-0 ml-[170px] md:ml-0">
+          <div className="mb-3 md:mb-0 ml-[200px] md:ml-0">
             <Link to="/register">
               <button className=" btn-sm bg-[#c97d4a] text-white uppercase font-bold">
                 Register
@@ -119,7 +119,7 @@ const Navbar = () => {
           {/* profile pic, username, log out button  */}
           <div className="ml-3">
             {user?.email ? (
-              <div className="flex gap-4 justify-center items-center w-[300px] ml-[50px] md:ml-0">
+              <div className="flex gap-4 justify-center items-center w-[300px] ml-[80px] md:ml-0">
                 <div className=" rounded-full">
                   <img
                     className="rounded-full w-[90px] h-[50px]"
@@ -148,7 +148,7 @@ const Navbar = () => {
               </div>
             ) : (
               <Link to="/login">
-                <button className=" btn-sm bg-[#c97d4a] text-white uppercase font-bold ml-[170px] md:ml-0">
+                <button className=" btn-sm bg-[#c97d4a] text-white uppercase font-bold lg:ml-[0px] md:ml-0 ml-[200px]">
                   Login
                 </button>
               </Link>

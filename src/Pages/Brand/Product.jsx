@@ -15,7 +15,7 @@ const Product = ({ product }) => {
   } = product || {};
   return (
     <div>
-      <div className="w-[350px] h-[500px] border border-black mb-[100px]">
+      <div className="w-[350px] lg:h-[500px] border border-black mb-[100px]">
         <figure>
           <img
             className="w-[200px] h-[200px] ml-[50px] mt-[20px]"

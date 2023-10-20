@@ -58,14 +58,14 @@ const UpdateProduct = () => {
   };
 
   return (
-    <div className="bg-[#DCDCDC] p-24 w-[1100px] mx-auto mt-12 mb-12">
-      <h2 className="text-4xl font-bold uppercase">
+    <div className="bg-[#DCDCDC] p-24 lg:w-[1100px] mx-auto mt-12 mb-12">
+      <h2 className="text-4xl font-bold uppercase lg:mb-0 mb-[20px]">
         Update a Product
       </h2>
       <form onSubmit={handleUpdateProduct}>
         {/* brand name and product name */}
         <div className="flex mb-8">
-          <div className="form-control w-1/2">
+          <div className="form-control lg:w-1/2">
             <label className="label">
               <span className="label-text">Brand Name</span>
             </label>
@@ -81,7 +81,7 @@ const UpdateProduct = () => {
               <option>Levis</option>
             </select>
           </div>
-          <div className="form-control w-1/2 ml-4">
+          <div className="form-control lg:w-1/2 ml-4">
             <label className="label">
               <span className="label-text">Product Name</span>
             </label>
@@ -98,7 +98,7 @@ const UpdateProduct = () => {
         </div>
         {/* product type and product price row */}
         <div className="flex mb-8">
-          <div className="form-control w-1/2">
+          <div className="form-control lg:w-1/2">
             <label className="label">
               <span className="label-text">Product Type</span>
             </label>
@@ -112,7 +112,7 @@ const UpdateProduct = () => {
               />
             </label>
           </div>
-          <div className="form-control w-1/2 ml-4">
+          <div className="form-control lg:w-1/2 ml-4">
             <label className="label">
               <span className="label-text">Product Price</span>
             </label>
@@ -129,7 +129,7 @@ const UpdateProduct = () => {
         </div>
         {/* product pic and rating row */}
         <div className="flex mb-8">
-          <div className="form-control w-1/2">
+          <div className="form-control lg:w-1/2">
             <label className="label">
               <span className="label-text">Product Pic</span>
             </label>
@@ -143,7 +143,7 @@ const UpdateProduct = () => {
               />
             </label>
           </div>
-          <div className="form-control w-1/2 ml-4">
+          <div className="form-control lg:w-1/2 ml-4">
             <label className="label">
               <span className="label-text">Rating</span>
             </label>
@@ -178,7 +178,7 @@ const UpdateProduct = () => {
         <input
           type="submit"
           value="Update Product"
-          className=" btn  bg-black font-bold  uppercase p-3 text-white w-[400px] ml-[250px]"
+          className=" btn  bg-black font-bold  uppercase p-3 text-white lg:w-[400px] lg:ml-[250px] ml-[70px]"
         />
       </form>
     </div>

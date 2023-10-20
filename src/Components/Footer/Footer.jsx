@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className="bg-[#DCDCDC] h-[900px] md:h-[600px] lg:h-[500px] text-black">
+    <div className="bg-[#DCDCDC] h-[1200px] md:h-[600px] lg:h-[500px] text-black">
       {/* footer container div */}
       <div className="grid grid-cols-1 md:grid-cols-8 lg:grid-cols-8 ml-[90px] md:ml-[40px] lg:ml-[150px] pt-[100px] ">
         {/* 1st part */}
@@ -16,12 +16,12 @@ const Footer = () => {
           <h1 className="text-3xl font-bold mb-3 md:mb-7 text-black">
             INFORMATION
           </h1>
-          <h1 className="md:mb-0 mb-12">About us</h1>
+          <h1 className="">About us</h1>
           <h1 className="mt-2">Customer Service</h1>
           <h1 className="mt-2">Manufactures</h1>
           <h1 className="mt-2">Privacy Policy</h1>
           <h1 className="mt-2">Terms & Condition</h1>
-          <h1 className="mt-2">Blog</h1>
+          <h1 className="mt-2 mb-8 lg:mb-0">Blog</h1>
         </div>
         {/* 2nd part */}
         <div className="col-span-2 w-[300px] md:w-[200px] lg:w-[300px] text-gray-600">
@@ -33,7 +33,7 @@ const Footer = () => {
           <h1 className="mt-2">Order History</h1>
           <h1 className="mt-2">Wish List</h1>
           <h1 className="mt-2">View Cart</h1>
-          <h1 className="mt-2">Latest Post</h1>
+          <h1 className="mt-2 mb-8 lg:mb-0">Latest Post</h1>
         </div>
         {/* 3rd part */}
         <div className="col-span-2 w-[300px] md:w-[200px] lg:w-[300px]">
@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
         {/* 4th part */}
         <div className="col-span-2 w-[300px] md:w-[200px] lg:w-[300px]">
-          <h1 className="text-3xl font-bold mb-3 md:mb-7 text-black">
+          <h1 className="text-3xl font-bold mt-8 lg:mt-0 mb-3 md:mb-7 text-black">
             STAY WITH US
           </h1>
           <p className="text-gray-600">
