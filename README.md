@@ -1,5 +1,6 @@
 - Website Name --> Fashion And Apparel 2023.
 - Live Site Link --> [Fashion And Apparel 2023](http://melted-stitch.surge.sh/)
+- Server Side Repo Link --> (https://github.com/ShoroveTajmen/A10-BrandShop-Server-Side)
 
 
 - In below I will list out the 5 Project features ::-
@@ -19,4 +20,6 @@ My cart route is private route. After log in a user they can add product to the 
 
 
  - Log In and Registration page Overview -> 
-The fields for name, photo, email, and password on the registration page. At least six characters must be included in the password, including one capital letter and one special character. It will display an error toast otherwise. A successful registration toast will appear once you click the register button. Users may also register using Google. The user profile picture, username, and logout button all vanish when we click log out button, and the log in button appears in the navigation bar. When we click the log in button and provide the proper gmail address and password, we are successfully logged in; otherwise, an error toast will show. A Google Account can also be used to log in. 
+The fields for name, photo, email, and password on the registration page. At least six characters must be included in the password, including one capital letter and one special character. It will display an error toast otherwise. A successful registration toast will appear once you click the register button. Users may also register using Google. The user profile picture, username, and logout button all vanish when we click log out button, and the log in button appears in the navigation bar. When we click the log in button and provide the proper gmail address and password, we are successfully logged in; otherwise, an error toast will show. A Google Account can also be used to log in.
+
+-Technologies Used -> JavaScript, React.js, Node.js, Express.js, MongoDB, Firebase
